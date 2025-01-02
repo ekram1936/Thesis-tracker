@@ -1,0 +1,8 @@
+mtaenv/
+scrape_results/
+logs/
+
+# Ignore Angular-related folders
+frontend/.angular/
+frontend/.vscode/
+frontend/node_modules/
