@@ -9,13 +9,13 @@ from .chair_info_sys_1 import scrape_information_systems
 
 # Register scraper functions here, keyed by lab name.
 SCRAPER_REGISTRY = {
-    "MAD Lab": scrape_mad_lab,
-    "PR Lab": scrape_pr_lab,
-    "LSTM Lab": scrape_lstm_lab,
-    "Chair of Automatic Control": scrape_chair_auto_control,
-    "Chair of Autonomous Systems and Mechatronics": scrape_asm_lab,
-    "I-Meet Lab": scrape_i_meet,
-    "Chair of Information Systems I, Innovation and Value Creation": scrape_information_systems
+    "MAD": scrape_mad_lab,
+    "PR": scrape_pr_lab,
+    "LSTM": scrape_lstm_lab,
+    "AC": scrape_chair_auto_control,
+    "ASM": scrape_asm_lab,
+    "I-Meet": scrape_i_meet,
+    "IIVC": scrape_information_systems
 
 }
 
