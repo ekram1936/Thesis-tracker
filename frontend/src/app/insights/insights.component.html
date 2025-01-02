@@ -1,0 +1,20 @@
+<div class="insights-container">
+    <div class="cards-wrapper">
+        <div class="insight-card">
+            <h3>Total Labs</h3>
+            <p *ngIf="totalLabs !== null; else loading">{{ totalLabs }}</p>
+            <ng-template #loading>Loading...</ng-template>
+        </div>
+        <div class="insight-card">
+            <h3>Total Open Thesis</h3>
+            <p *ngIf="totalOpenThesis !== null; else loading">{{ totalOpenThesis }}</p>
+        </div>
+        <div class="insight-card">
+            <h3>Total Closed Thesis</h3>
+            <p *ngIf="totalClosedThesis !== null; else loading">{{ totalClosedThesis }}</p>
+        </div>
+    </div>
+    <div class="chart-container" *ngIf="thesisPerLab !== null; else loading">
+        <canvas id="thesisChart"></canvas>
+    </div>
+</div>

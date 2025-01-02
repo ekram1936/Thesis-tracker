@@ -1,0 +1,238 @@
+/* Page Background */
+.landing-page {
+  background-color: #f5f5f5;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 10%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 8;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #555;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative; /* This makes the section a reference point for positioning the image */
+  padding: 4rem 10%;
+  background-color: #ffffff;
+  min-height: 90vh;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex; /* Optionally use flexbox for the content */
+  align-items: center;
+}
+
+.hero-content {
+  z-index: 2; /* Ensure the content appears above the image */
+  max-width: 45%; /* Adjust as needed */
+}
+
+.hero-img {
+  position: absolute; /* Use absolute positioning for precise placement */
+  top: 10%; /* Adjust to move the image vertically */
+  right: 5%; /* Adjust to move the image horizontally */
+  max-width: 50%;
+  height: auto;
+  z-index: 1; /* Ensure it stays behind the content */
+  border-radius: 10px;
+}
+
+.hero-content {
+  max-width: 40%;
+}
+
+/* .hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000;
+} */
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000; /* Default color for "Welcome to Thesis" */
+}
+
+.hero-title .highlight {
+  color: #007bff; /* Custom color for "Tracker" */
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #555;
+}
+
+.hero-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Add animation to the hero image */
+@keyframes heroImageAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero-img {
+  max-width: 50%;
+  flex: 1 1 50%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 12rem;
+  animation: heroImageAnimation 5s infinite ease-in-out;
+}
+
+/* Hide the image on smaller screens */
+@media (max-width: 768px) {
+  .hero-img {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column; /* Stacks content vertically */
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%; /* Full-width text on smaller screens */
+  }
+}
+
+/* Section Distinction */
+.insights-section {
+  padding: 4rem 10%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem 10%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  color: #555;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.social-link {
+  text-decoration: none;
+  color: #555;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #007bff;
+}
+
+.social-link i {
+  margin-right: 0.3rem;
+}
+
+.animated-text {
+  overflow: hidden; /* Ensures text stays within the container */
+  white-space: nowrap; /* Keeps text in a single line */
+  border-right: auto solid #007bff; /* Creates the typewriter cursor */
+  font-size: 1.2rem;
+  color: #555;
+  animation: typing 4s steps(40, end) infinite, blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0; /* Start with no text visible */
+  }
+  50% {
+    width: 100%; /* Reveal full text */
+  }
+  60% {
+    width: 100%; /* Pause briefly at the end */
+  }
+  100% {
+    width: 0; /* Reset to no text visible */
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-color: transparent; /* Cursor invisible */
+  }
+  50% {
+    border-color: #007bff; /* Cursor visible */
+  }
+}

@@ -1,0 +1,58 @@
+<section class="labs-container">
+    <!-- Header -->
+    <div class="labs-header">
+        <h2 class="section-title">Master Thesis Topics by Labs</h2>
+        <div class="filters">
+            <select [(ngModel)]="selectedLab" class="filter-dropdown" (change)="filterLabs()">
+                <option value="">All Labs</option>
+                <option *ngFor="let lab of labs" [value]="lab.lab_name">{{ lab.lab_name }}</option>
+            </select>
+
+            <select [(ngModel)]="selectedStatus" class="filter-dropdown" (change)="filterLabs()">
+                <option value="">All Status</option>
+                <option value="open">Open</option>
+                <option value="closed">Closed</option>
+            </select>
+
+            <input type="text" class="search-bar" [(ngModel)]="searchQuery" placeholder="Search by topic or keyword..."
+                (input)="filterLabs()" />
+        </div>
+    </div>
+
+    <!-- Table -->
+    <div class="labs-table-container">
+        <table class="labs-table">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Thesis Topic</th>
+                    <th>Lab Name</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let lab of filteredLabs; let i = index">
+                    <ng-container *ngFor="let topic of lab.topics; let j = index">
+                        <tr>
+                            <td>{{ i + 1 }}.{{ j + 1 }}</td>
+                            <td>
+                                <a href="{{ topic.url }}" class="topic-link">{{ topic.title }}</a>
+                            </td>
+                            <td>
+                                <a href="{{ lab.lab_url }}" class="lab-link">{{ lab.lab_name }}</a>
+                            </td>
+                            <td>
+                                <span class="status-badge" [ngClass]="{
+                    'status-open': topic.status === 'open',
+                    'status-closed': topic.status === 'closed'
+                  }">
+                                    {{ topic.status }}
+                                </span>
+                            </td>
+                        </tr>
+                    </ng-container>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+</section>

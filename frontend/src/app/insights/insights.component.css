@@ -1,0 +1,107 @@
+.insights-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.insight-card {
+  flex: 1 1 calc(33.333% - 2rem);
+  max-width: calc(33.333% - 2rem);
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.insight-card:hover {
+  transform: translateY(-5px);
+}
+
+.insight-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.insight-card p {
+  font-size: 1.8rem;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.chart-container {
+  width: 100%; /* Adjust to take full width */
+  max-width: 1200px; /* Set a maximum width for large screens */
+  margin: 0 auto; /* Center align */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  height: 500px; /* Let the height adjust dynamically */
+}
+
+.chart-container canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .chart-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-container {
+    padding: 0.5rem;
+  }
+}
+/* Add scroll-margin for smooth alignment with navbar */
+section {
+  scroll-margin-top: 80px;
+}
+/* Media Queries */
+@media (max-width: 1024px) {
+  .insight-card {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .insight-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .insight-card h3 {
+    font-size: 1rem;
+  }
+
+  .insight-card p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .insight-card {
+    padding: 1rem;
+  }
+
+  .insight-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .insight-card p {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,100 @@
+# pandas
+# numpy
+# crawl4ai
+# fastapi
+# python-dotenv
+# requests
+# uvicorn
+# playwright
+# psycopg2
+# sqlalchemy
+
+# pandas==2.2.3
+# numpy==2.2.1
+# crawl4ai==0.4.23
+# fastapi==0.115.6
+# python-dotenv==1.0.1
+# requests==2.31.0
+# uvicorn==0.34.0
+# playwright==1.38.0
+# psycopg2==2.9.10
+# SQLAlchemy==2.0.36
+# jsonschema==4.23.0
+# annotated-types==0.7.0
+
+
+aiofiles==24.1.0
+aiohappyeyeballs==2.4.4
+aiohttp==3.11.11
+aiosignal==1.3.2
+aiosqlite==0.20.0
+annotated-types==0.7.0
+anyio==4.7.0
+async-timeout==5.0.1
+attrs==24.3.0
+beautifulsoup4==4.12.3
+charset-normalizer==3.4.0
+click==8.1.8
+colorama==0.4.6
+Crawl4AI==0.4.23
+distro==1.9.0
+exceptiongroup==1.2.2
+fake-http-header==0.3.5
+fastapi==0.115.6
+filelock==3.16.1
+frozenlist==1.5.0
+fsspec==2024.12.0
+greenlet==3.1.1
+h11==0.14.0
+httpcore==1.0.7
+httpx==0.27.2
+huggingface-hub==0.27.0
+idna==3.10
+importlib_metadata==8.5.0
+iniconfig==2.0.0
+Jinja2==3.1.5
+jiter==0.8.2
+jsonschema==4.23.0
+jsonschema-specifications==2024.10.1
+litellm==1.55.10
+lxml==5.3.0
+MarkupSafe==3.0.2
+multidict==6.1.0
+numpy==2.2.1
+
+packaging==24.2
+pandas==2.2.3
+pillow==10.4.0
+playwright==1.49.1
+pluggy==1.5.0
+psycopg2-binary==2.9.10
+pydantic==2.10.4
+pydantic_core==2.27.2
+
+
+python-dateutil==2.9.0.post0
+python-dotenv==1.0.1
+rank-bm25==0.2.2
+referencing==0.35.1
+regex==2024.11.6
+requests==2.32.3
+rpds-py==0.22.3
+six==1.17.0
+sniffio==1.3.1
+setuptools>=65.0
+snowballstemmer==2.2.0
+soupsieve==2.6
+SQLAlchemy==2.0.36
+starlette==0.41.3
+tf-playwright-stealth==1.1.0
+tiktoken==0.8.0
+tokenizers==0.21.0
+tomli==2.2.1
+tqdm==4.67.1
+typing_extensions==4.12.2
+tzdata==2024.2
+urllib3==2.3.0
+uvicorn==0.34.0
+xxhash==3.5.0
+yarl==1.18.3
+zipp==3.21.0

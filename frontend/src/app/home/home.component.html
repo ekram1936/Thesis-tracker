@@ -1,0 +1,57 @@
+<div class="landing-page">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">Thesis Tracker</div>
+        <div class="navbar-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#insights" class="nav-link">Insights</a>
+            <a href="#labs" class="nav-link">Thesis Topics</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Welcome to Thesis <span class="highlight">Tracker</span>
+            </h1>
+            <p class="hero-subtitle animated-text">
+                <span class="typewriter">Discover Labs, Explore Topics, Stay Updated . </span>
+            </p>
+            <button class="hero-btn" (click)="scrollToSection('insights')">
+                Explore Now
+            </button>
+        </div>
+        <!-- <img src="assets/2895106.svg" alt="Landing Illustration" class="hero-img" /> -->
+        <img src="assets/landing_img_2.svg" alt="Landing Illustration" class="hero-img" />
+    </section>
+
+    <!-- Insights Section -->
+    <section id="insights" class="insights-section">
+        <h2 class="section-title">Insights</h2>
+        <app-insights></app-insights>
+    </section>
+
+    <!-- Lab Section -->
+    <section id="labs" class="section-labs">
+        <app-labs></app-labs>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Thesis Tracker. All rights reserved.</p>
+            <p>Developed by <strong>Md Ekram Hossain</strong></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/md-ekram/" target="_blank" class="social-link"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/ekram1936" target="_blank" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</div>
