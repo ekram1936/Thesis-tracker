@@ -1,5 +1,15 @@
 # Thesis Tracker 🚀
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/)
+[![Node.js v20.11.1](https://img.shields.io/badge/Node.js-20-green.svg)](https://nodejs.org/en/)
+[![Angular 19](https://img.shields.io/badge/Angular-19-orange.svg)](https://angular.io/)
+[![FastAPI 0.115.6](https://img.shields.io/badge/FastAPI-blue.svg)](https://fastapi.tiangolo.com/)
+[![PostgreSQL 17](https://img.shields.io/badge/PostgreSQL-17-purple.svg)](https://www.postgresql.org/docs/17/index.html)
+[![Docker](https://img.shields.io/badge/docker-blue.svg)](https://www.docker.com/)
+[![Chart.js 4.3.0](https://img.shields.io/badge/Chart.js-4-green.svg)](https://www.chartjs.org/)
+[![Crawl4ai](https://img.shields.io/badge/Crawl4ai-orange.svg)](https://github.com/unclecode/crawl4ai)
+
 ## Overview
 
 **Thesis Tracker** is an open-source platform exclusively designed for the students of the University of Erlangen and Nuremberg. It simplifies the process of discovering and managing thesis opportunities across various labs within the university. Students can seamlessly explore labs of interest, track available and closed thesis topics, and gain valuable insights into the distribution of open and closed topics by each lab. With advanced search and filtering features, the platform enables students to find the perfect fit for their academic pursuits while gaining a deeper understanding of the university's diverse research landscape.
