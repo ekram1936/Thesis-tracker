@@ -6,6 +6,10 @@
             <a href="#home" class="nav-link">Home</a>
             <a href="#insights" class="nav-link">Insights</a>
             <a href="#labs" class="nav-link">Thesis Topics</a>
+            <a href="https://github.com/ekram1936/thesis-tracker" target="_blank" class="nav-link github-link"
+                aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
         </div>
     </nav>
 
@@ -16,11 +20,16 @@
                 Welcome to Thesis <span class="highlight">Tracker</span>
             </h1>
             <p class="hero-subtitle animated-text">
-                <span class="typewriter">Discover Labs, Explore Topics, Stay Updated . </span>
+                <span class="typewriter">Discover Labs, Explore Topics, Stay Updated.</span>
             </p>
-            <button class="hero-btn" (click)="scrollToSection('insights')">
-                Explore Now
-            </button>
+            <div class="hero-buttons">
+                <button class="hero-btn" (click)="scrollToSection('insights')">
+                    Explore Now
+                </button>
+                <a href="https://github.com/ekram1936/thesis-tracker" target="_blank" class="hero-btn contribute-btn">
+                    <i class="fab fa-github"></i> Contribute Now
+                </a>
+            </div>
         </div>
         <!-- <img src="assets/2895106.svg" alt="Landing Illustration" class="hero-img" /> -->
         <img src="assets/landing_img_2.svg" alt="Landing Illustration" class="hero-img" />
@@ -53,5 +62,4 @@
             </div>
         </div>
     </footer>
-
 </div>

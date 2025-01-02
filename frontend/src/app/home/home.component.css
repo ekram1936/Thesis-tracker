@@ -91,19 +91,44 @@
   color: #555;
 }
 
+.hero-buttons {
+  display: flex;
+  gap: 15px; /* Adds space between buttons */
+  margin-top: 20px;
+  justify-content: flex-start; /* Aligns buttons to the left */
+}
+
 .hero-btn {
-  padding: 0.8rem 2rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  color: white;
   background-color: #007bff;
-  color: #fff;
+  border: none;
+  border-radius: 50px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .hero-btn:hover {
   background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.contribute-btn {
+  background-color: #333;
+}
+
+.contribute-btn:hover {
+  background-color: #1b1b1b;
+}
+
+.hero-btn i {
+  font-size: 18px;
 }
 
 /* Add animation to the hero image */
@@ -235,4 +260,13 @@
   50% {
     border-color: #007bff; /* Cursor visible */
   }
+}
+
+.github-link i {
+  font-size: 20px; /* Adjust size of the GitHub icon */
+  color: #333;
+}
+
+.github-link:hover i {
+  color: #007bff; /* Highlight GitHub icon on hover */
 }
