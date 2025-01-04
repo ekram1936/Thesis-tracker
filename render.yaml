@@ -2,7 +2,7 @@ services:
   - type: web
     name: thesis-tracker-backend
     env: docker
-    dockerfilePath: ./backend/Dockerfile
+    image: ekram1181/thesis_tracker_backend:latest # Correct public image URL
     plan: free
     envVars:
       - key: PYTHONPATH
@@ -14,7 +14,6 @@ services:
   - type: web
     name: thesis-tracker-frontend
     env: docker
-    dockerfilePath: ./frontend/Dockerfile
+    image: ekram1181/thesis_tracker_frontend:latest
     plan: free
-    buildCommand: npm install && npm run build
     autoDeploy: true
