@@ -10,8 +10,6 @@ services:
       - key: DATABASE_URL
         value: postgresql://ekram1181:K1pqGBK3cYmrLn0lGIkeaNHOK1eyxRM1@dpg-ctskevi3esus73dr9ftg-a/mttopicfau
     healthCheckPath: /health
-    ports:
-      - 8000
 
   - type: web
     name: thesis-tracker-frontend
@@ -21,5 +19,3 @@ services:
     buildCommand: npm install && npm run build
     startCommand: npm run start
     autoDeploy: true
-    ports:
-      - 4200
