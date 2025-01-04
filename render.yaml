@@ -3,13 +3,14 @@ services:
     name: thesis-tracker-backend
     env: docker
     dockerfilePath: ./backend/Dockerfile
+    plan: free
     envVars:
       - key: PYTHONPATH
         value: /app
-      - key: DATABASE_HOST
-        value: db.render.com
-    healthCheckPath: /health
-    plan: free
+      - key: DATABASE_URL
+        value: ${thesis-tracker-database.DATABASE_URL} # Inject the Render-managed database URL
+    healthCheckPath: /health # Optional health check path
+    autoDeploy: true # Automatically deploy on new commits
     ports:
       - 8000
 
@@ -17,18 +18,19 @@ services:
     name: thesis-tracker-frontend
     env: docker
     dockerfilePath: ./frontend/Dockerfile
+    plan: free
     buildCommand: npm install && npm run build
     startCommand: npm run start
-    plan: free
+    autoDeploy: true
     ports:
       - 4200
 
-  - type: database
+  - type: postgres
     name: thesis-tracker-database
-    engine: postgres
-    version: 17
-    plan: free
-    databases:
-      - name: MTTopicFAULABS
-        user: ekram1181
-        password: 1181
+    plan: free # Use Render's free Postgres database plan
+    properties:
+      version: 14 # PostgreSQL version (e.g., 14, 15, or 17)
+      databases:
+        - name: MTTopicFAULABS
+      user: ekram1181
+      password: 1181
