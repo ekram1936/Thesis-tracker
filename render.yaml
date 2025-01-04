@@ -17,5 +17,4 @@ services:
     dockerfilePath: ./frontend/Dockerfile
     plan: free
     buildCommand: npm install && npm run build
-    startCommand: npm run start
     autoDeploy: true
