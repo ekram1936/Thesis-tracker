@@ -8,9 +8,8 @@ services:
       - key: PYTHONPATH
         value: /app
       - key: DATABASE_URL
-        value: ${thesis-tracker-database.DATABASE_URL} # Inject the Render-managed database URL
-    healthCheckPath: /health # Optional health check path
-    autoDeploy: true # Automatically deploy on new commits
+        value: postgresql://ekram1181:K1pqGBK3cYmrLn0lGIkeaNHOK1eyxRM1@dpg-ctskevi3esus73dr9ftg-a/mttopicfau
+    healthCheckPath: /health
     ports:
       - 8000
 
@@ -24,13 +23,3 @@ services:
     autoDeploy: true
     ports:
       - 4200
-
-  - type: postgres
-    name: thesis-tracker-database
-    plan: free # Use Render's free Postgres database plan
-    properties:
-      version: 14 # PostgreSQL version (e.g., 14, 15, or 17)
-      databases:
-        - name: MTTopicFAULABS
-      user: ekram1181
-      password: 1181
