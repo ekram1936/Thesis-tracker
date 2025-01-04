@@ -1,0 +1,34 @@
+services:
+  - type: web
+    name: thesis-tracker-backend
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    envVars:
+      - key: PYTHONPATH
+        value: /app
+      - key: DATABASE_HOST
+        value: db.render.com
+    healthCheckPath: /health
+    plan: free
+    ports:
+      - 8000
+
+  - type: web
+    name: thesis-tracker-frontend
+    env: docker
+    dockerfilePath: ./frontend/Dockerfile
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    plan: free
+    ports:
+      - 4200
+
+  - type: database
+    name: thesis-tracker-database
+    engine: postgres
+    version: 17
+    plan: free
+    databases:
+      - name: MTTopicFAULABS
+        user: ekram1181
+        password: 1181
