@@ -1,12 +1,12 @@
 import json
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from database.database import get_db
-from database.models import Lab, init_db, TopicStatus
+from ...database.database import get_db
+from ...database.models import Lab, init_db, TopicStatus
 from ..routers.scrape import scrape_all
 from ..routers.insert_lab import insert_lab
-from database.schemas import LabCreate
-from database.crud import get_all_topics, add_new_thesis_topic, get_lab_id_mapping, update_topic_status
+from ...database.schemas import LabCreate
+from ...database.crud import get_all_topics, add_new_thesis_topic, get_lab_id_mapping, update_topic_status
 import logging
 
 logger = logging.getLogger(__name__)

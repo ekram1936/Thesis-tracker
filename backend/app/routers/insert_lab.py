@@ -1,9 +1,9 @@
 from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
-from database.database import get_db
-from database.models import init_db
-from database.schemas import LabCreate
-from database.crud import lab_exists, add_new_lab
+from ...database.database import get_db
+from ...database.models import init_db
+from ...database.schemas import LabCreate
+from ...database.crud import lab_exists, add_new_lab
 import logging
 
 logger = logging.getLogger(__name__)

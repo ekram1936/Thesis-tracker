@@ -1,3 +1,51 @@
+# version: "3.8"
+
+# services:
+#   backend:
+#     build:
+#       context: .
+#       dockerfile: backend/Dockerfile
+#     environment:
+#       - PYTHONPATH=/app
+#       - DATABASE_HOST=db
+#     ports:
+#       - "8000:8000"
+#     env_file:
+#       - ./backend/app/environment/.env
+#     depends_on:
+#       - db
+
+#   frontend:
+#     build:
+#       context: .
+#       dockerfile: frontend/Dockerfile
+#     ports:
+#       - "4200:4200"
+#     stdin_open: true
+#     tty: true
+#     depends_on:
+#       - backend
+
+#   db:
+#     image: postgres:17
+#     container_name: db
+#     environment:
+#       POSTGRES_USER: ekram1181
+#       POSTGRES_PASSWORD: 1181
+#       POSTGRES_DB: MTTopicFAULABS
+#     ports:
+#       - "5431:5432" # Host port 5431 mapped to container port 5432
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data
+#     healthcheck:
+#       test: ["CMD", "pg_isready", "-U", "ekram1181", "-d", "MTTopicFAULABS"]
+#       interval: 5s
+#       timeout: 10s
+#       retries: 5
+
+# volumes:
+#   postgres_data:
+
 version: "3.8"
 
 services:
@@ -5,13 +53,14 @@ services:
     build:
       context: .
       dockerfile: backend/Dockerfile
+    image: ekram1181/thesis_tracker_backend:backend_latest # Tag for backend image
     environment:
       - PYTHONPATH=/app
       - DATABASE_HOST=db
     ports:
       - "8000:8000"
     env_file:
-      - ./backend/app/environment/.env
+      - ./backend/environment/.env
     depends_on:
       - db
 
@@ -19,6 +68,7 @@ services:
     build:
       context: .
       dockerfile: frontend/Dockerfile
+    image: ekram1181/thesis_tracker_frontend:frontend_latest # Tag for frontend image
     ports:
       - "4200:4200"
     stdin_open: true

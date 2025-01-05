@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from database.database import get_db
-from database.crud import (
+from ...database.database import get_db
+from ...database.crud import (
     get_total_labs,
     get_total_open_thesis,
     get_total_closed_thesis,
