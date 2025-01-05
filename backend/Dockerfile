@@ -12,7 +12,8 @@ COPY backend/requirements.txt /app/requirements.txt
 # Copy the backend and database folders
 COPY backend /app/backend
 COPY backend/database /app/database
-COPY backend/environment /app/environment
+COPY backend/environment/ /app/environment/
+
 
 # Install Google Chrome
 # Install Chromium
