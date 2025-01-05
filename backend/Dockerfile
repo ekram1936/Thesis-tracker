@@ -4,8 +4,8 @@ FROM --platform=linux/amd64 python:3.11-slim
 # Set working directory inside the container
 WORKDIR /app
 
-# Copy the entire `backend` folder into the container
-COPY backend /app/backend
+# Copy the entire current directory (backend folder contents)
+COPY . /app/backend
 
 # Set the working directory to `/app/backend`
 WORKDIR /app/backend
