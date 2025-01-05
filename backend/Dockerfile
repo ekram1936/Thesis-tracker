@@ -4,15 +4,11 @@ FROM --platform=linux/amd64 python:3.11-slim
 # Set working directory inside the container
 WORKDIR /app
 
-
-
-
-
-
-# Copy the backend and database folders
+# Copy the entire `backend` folder into the container
 COPY backend /app/backend
 
-
+# Set the working directory to `/app/backend`
+WORKDIR /app/backend
 
 
 # Install Google Chrome
