@@ -3,7 +3,7 @@ FROM --platform=linux/amd64 python:3.11-slim
 
 # Set working directory inside the container
 WORKDIR /app
-COPY backend/requirements.txt /app/requirements.txt
+
 
 
 
