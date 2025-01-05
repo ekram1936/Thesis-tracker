@@ -11,7 +11,7 @@ import enum
 
 
 # Load environment variables
-load_dotenv()
+load_dotenv(dotenv_path="./environment/.env")
 logger = logging.getLogger(__name__)
 
 
