@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://backend:8000/api', // Production backend API
+  apiUrl: 'https://thesis-tracker-production.up.railway.app/api', // Production backend API
 };
