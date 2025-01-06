@@ -1,0 +1,14 @@
+name: Frequent FastAPI Endpoint Trigger
+
+on:
+  schedule:
+    - cron: "*/10 * * * *" # Runs every 10 minutes
+
+jobs:
+  call-fastapi-endpoint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Make API Request
+        run: |
+          curl -X POST https://thesis-tracker-production.up.railway.app/api/insert_thesis_topic
