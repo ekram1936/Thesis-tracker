@@ -1,8 +1,8 @@
-name: Frequent FastAPI Endpoint Trigger
+name: Daily FastAPI Endpoint Trigger
 
 on:
   schedule:
-    - cron: "*/10 * * * *" # Runs every 10 minutes
+    - cron: "0 0 * * *" # Runs daily at midnight (00:00 UTC)
 
 jobs:
   call-fastapi-endpoint:
