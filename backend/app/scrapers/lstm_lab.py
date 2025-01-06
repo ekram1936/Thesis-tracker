@@ -1,7 +1,5 @@
 import logging
 import re
-from bs4 import BeautifulSoup
-
 from .run_crawl4ai import run_crawl4ai
 
 logger = logging.getLogger(__name__)

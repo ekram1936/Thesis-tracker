@@ -5,6 +5,7 @@ from .chair_auto_control import scrape_chair_auto_control
 from .asm_lab import scrape_asm_lab
 from .i_meet_lab import scrape_i_meet
 from .chair_info_sys_1 import scrape_information_systems
+from .dds_lab import scrape_dds_lab
 
 
 # Register scraper functions here, keyed by lab name.
@@ -15,7 +16,8 @@ SCRAPER_REGISTRY = {
     "AC": scrape_chair_auto_control,
     "ASM": scrape_asm_lab,
     "I-Meet": scrape_i_meet,
-    "IIVC": scrape_information_systems
+    "IIVC": scrape_information_systems,
+    "DDS": scrape_dds_lab
 
 }
 
