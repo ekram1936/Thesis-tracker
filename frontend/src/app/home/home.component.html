@@ -2,16 +2,34 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-brand">Thesis Tracker</div>
-        <div class="navbar-links">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#insights" class="nav-link">Insights</a>
-            <a href="#labs" class="nav-link">Thesis Topics</a>
+        <button class="menu-toggle" (click)="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div [class.active]="menuOpen" class="navbar-links">
+            <a href="#home" class="nav-link" (click)="closeMenu()">Home</a>
+            <a href="#insights" class="nav-link" (click)="closeMenu()">Insights</a>
+            <a href="#labs" class="nav-link" (click)="closeMenu()">Thesis Topics</a>
             <a href="https://github.com/ekram1936/thesis-tracker" target="_blank" class="nav-link github-link"
-                aria-label="GitHub">
+                aria-label="GitHub" (click)="closeMenu()">
                 <i class="fab fa-github"></i>
+            </a>
+            <!-- Support Me Button -->
+            <a href="#" class="nav-link support-me-link" (click)="openModal($event); closeMenu()">
+                <i class="fas fa-mug-hot"></i> <span>Support Me</span>
             </a>
         </div>
     </nav>
+
+
+    <!-- Modal for PayPal QR Code -->
+    <div *ngIf="showModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" (click)="closeModal()">&times;</span>
+            <h2>Support Me</h2>
+            <p>Scan the QR code below to support me via PayPal:</p>
+            <img src="assets/qrcode_3.jpg" alt="PayPal QR Code" class="qr-code" />
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
@@ -37,6 +55,7 @@
 
     <!-- Insights Section -->
     <section id="insights" class="insights-section">
+        <div class="section-anchor" id="insights-anchor"></div>
         <h2 class="section-title">Insights</h2>
         <app-insights></app-insights>
     </section>
