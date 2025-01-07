@@ -72,12 +72,20 @@
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .navbar-brand {
+    order: 1; /* Move brand logo to top */
+    text-align: center; /* Center the logo */
+    width: 100%; /* Take full width */
   }
 
   .menu-toggle {
-    display: block; /* Show hamburger menu on mobile */
+    display: block; /* Show hamburger menu */
+    order: 2; /* Move menu button below logo */
+    margin-top: 10px;
   }
 
   .navbar-links {
@@ -98,56 +106,35 @@
   }
 
   .support-me-link span {
-    display: none; /* Hide "Support Me" text on mobile, show only the icon */
+    display: auto; /* Hide "Support Me" text on mobile, show only the icon */
   }
 }
 
 /* Hero Section */
 .hero-section {
-  position: relative; /* This makes the section a reference point for positioning the image */
+  position: relative;
   padding: 4rem 10%;
   background-color: #ffffff;
   min-height: 90vh;
   margin-bottom: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex; /* Optionally use flexbox for the content */
-  align-items: center;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
 }
 
 .hero-content {
-  z-index: 2; /* Ensure the content appears above the image */
-  max-width: 45%; /* Adjust as needed */
+  z-index: 2;
+  max-width: 100%;
+  text-align: center; /* Center text content */
 }
-
-.hero-img {
-  position: absolute; /* Use absolute positioning for precise placement */
-  top: 10%; /* Adjust to move the image vertically */
-  right: 5%; /* Adjust to move the image horizontally */
-  max-width: 50%;
-  height: auto;
-  z-index: 1; /* Ensure it stays behind the content */
-  border-radius: 10px;
-}
-
-.hero-content {
-  max-width: 40%;
-}
-
-/* .hero-title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #000;
-} */
 
 .hero-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: #000; /* Default color for "Welcome to Thesis" */
-}
-
-.hero-title .highlight {
-  color: #007bff; /* Custom color for "Tracker" */
+  color: #000;
 }
 
 .hero-subtitle {
@@ -158,9 +145,10 @@
 
 .hero-buttons {
   display: flex;
-  gap: 15px; /* Adds space between buttons */
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 15px;
   margin-top: 20px;
-  justify-content: flex-start; /* Aligns buttons to the left */
+  align-items: center;
 }
 
 .hero-btn {
@@ -174,6 +162,7 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s, transform 0.2s;
@@ -192,8 +181,37 @@
   background-color: #1b1b1b;
 }
 
-.hero-btn i {
-  font-size: 18px;
+.hero-img {
+  display: none; /* Hide hero image on smaller screens */
+}
+
+/* For Larger Screens */
+@media (min-width: 768px) {
+  .hero-section {
+    flex-direction: row; /* Display hero image and text side-by-side */
+    text-align: left;
+  }
+
+  .hero-content {
+    max-width: 40%;
+    text-align: left;
+  }
+
+  .hero-img {
+    display: block;
+    max-width: 50%;
+    right: -15%;
+    flex: 1 1 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 12rem;
+    animation: heroImageAnimation 5s infinite ease-in-out;
+  }
+
+  .hero-buttons {
+    flex-direction: row; /* Display buttons side-by-side */
+    justify-content: flex-start;
+  }
 }
 
 /* Add animation to the hero image */
