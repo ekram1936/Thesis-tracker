@@ -6,6 +6,9 @@ from .asm_lab import scrape_asm_lab
 from .i_meet_lab import scrape_i_meet
 from .chair_info_sys_1 import scrape_information_systems
 from .dds_lab import scrape_dds_lab
+from .lhft_lab import scrape_lhft_lab
+from .nhr_lab import scrape_nhr_lab
+from .like_lab import scrape_like_lab
 
 
 # Register scraper functions here, keyed by lab name.
@@ -17,7 +20,11 @@ SCRAPER_REGISTRY = {
     "ASM": scrape_asm_lab,
     "I-Meet": scrape_i_meet,
     "IIVC": scrape_information_systems,
-    "DDS": scrape_dds_lab
+    "DDS": scrape_dds_lab,
+    "LHFT": scrape_lhft_lab,
+    "NHR": scrape_nhr_lab,
+    "LIKE": scrape_like_lab
+
 
 }
 
