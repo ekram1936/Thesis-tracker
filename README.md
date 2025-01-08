@@ -167,15 +167,15 @@ Ensure you have the following installed:
 | Chair of Automatic Control                                       | [Visit Link](https://www.ac.tf.fau.eu/teaching/4students/)                                                            | ✅ Completed        |
 | ASM                                                              | [Visit Link](https://www.asm.tf.fau.de/teaching/student-projects/#collapse_0)                                         | ✅ Completed        |
 | Chair of Corporate Management WiSo                               | [Visit Link](https://www.unternehmensfuehrung.rw.fau.de/studium-lehre-2/abschlussarbeiten/masterarbeiten/)            | ⏳ Pending          |
-| DDS                                                              | [Visit Link](https://www.datascience.nat.fau.eu/research/groups/ouda/bachelor-and-master-theses/master-thesis/)       | ⏳ Pending          |
+| DDS                                                              | [Visit Link](https://www.datascience.nat.fau.eu/research/groups/ouda/bachelor-and-master-theses/master-thesis/)       | ✅ Completed        |
 | I-MEET                                                           | [Visit Link](https://www.i-meet.ww.uni-erlangen.de/jobs/theses/msc-theses/)                                           | ✅ Completed        |
 | Chair of Information Systems I, Innovation and Value Creation    | [Visit Link](https://www.wi1.rw.fau.de/thesis-offerings/)                                                             | ✅ Completed        |
-| NHR@FAU - HPC                                                    | [Visit Link](https://hpc.fau.de/teaching/theses/)                                                                     | ⏳ Pending          |
+| NHR@FAU - HPC                                                    | [Visit Link](https://hpc.fau.de/teaching/theses/)                                                                     | ✅ Completed        |
 | MIS Lab                                                          | [Visit Link](https://www.mis.rw.fau.de/theses-2/#thesestopics)                                                        | ⏳ Pending          |
 | Department of Mathematics                                        | [Visit Link](https://en.www.math.fau.de/continuous-optimization/masters-theses-hiwi/)                                 | ⏳ Pending          |
 | Chair of Computer Science 1, IT Security Infrastructures         | [Visit Link](https://univis.uni-erlangen.de/form?dsc=go&to=exa&department=1513002300)                                 | ⏳ Pending          |
-| Chair of Information Technology (Communication Electronics) LIKE | [Visit Link](https://www.like.tf.fau.de/lehre/abschlussarbeiten/masterarbeiten/)                                      | ⏳ Pending          |
-| Chair of High Frequency Engineering LHFT                         | [Visit Link](https://www.lhft.eei.fau.de/lehr/pruefungen/freie-bachelor-masterarbeiten-forschungspraktika#collapse_1) | ⏳ Pending          |
+| Chair of Information Technology (Communication Electronics) LIKE | [Visit Link](https://www.like.tf.fau.de/lehre/abschlussarbeiten/masterarbeiten/)                                      | ✅ Completed        |
+| Chair of High Frequency Engineering LHFT                         | [Visit Link](https://www.lhft.eei.fau.de/lehr/pruefungen/freie-bachelor-masterarbeiten-forschungspraktika#collapse_1) | ✅ Completed        |
 
 ### Scraping Status Key:
 
