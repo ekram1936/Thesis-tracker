@@ -12,6 +12,10 @@
 
 ## Overview
 
+Below is a visual representation of the CI/CD workflow:
+
+![CI/CD Workflow Diagram](frontend/src/assets/workflow_1.png)
+
 **Thesis Tracker** is an open-source platform exclusively designed for the students of the University of Erlangen and Nuremberg. It simplifies the process of discovering and managing thesis opportunities across various labs within the university. Students can seamlessly explore labs of interest, track available and closed thesis topics, and gain valuable insights into the distribution of open and closed topics by each lab. With advanced search and filtering features, the platform enables students to find the perfect fit for their academic pursuits while gaining a deeper understanding of the university's diverse research landscape.
 
 ---
